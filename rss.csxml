@@ -8,7 +8,7 @@
     <description>Personal blog of @Model.Site.Config["author"]</description>
     <language>en-us</language>
     <pubDate>@Model.Site.Time.ToString("ddd, dd MMM yyyy H:mm:ss K")</pubDate>
-    <lastBuildDate>@Model.Site.Time.ToString("ddd, dd MMM yyyy H:mm:ss K")</ lastBuildDate >
+    <lastBuildDate>@Model.Site.Time.ToString("ddd, dd MMM yyyy H:mm:ss K")</lastBuildDate>
 
     @foreach(var post in Model.Site.Posts)
     {
