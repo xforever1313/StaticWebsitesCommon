@@ -1,5 +1,3 @@
-Help keep the server running!  Donate below.
-
 ## Cryptocurrencies
 
 * **BitCoin Address:** 14JnssutCNTNCng5BkqdZrs4QsrP5XAucz
