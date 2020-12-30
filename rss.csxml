@@ -5,7 +5,7 @@
     <title>@Model.Site.Title | @Model.Site.Config["author"]</title>
     <link>@Model.Site.Config["url"]</link>
     <atom:link href="@Model.Site.Config["url"]/rss.xml" rel="self" type="application/rss+xml" />
-    <description>Personal blog of @Model.Site.Config["author"]</description>
+    <description>@Model.Site.Config["description"]</description>
     <language>en-us</language>
     <pubDate>@Model.Site.Time.ToString("ddd, dd MMM yyyy H:mm:ss K")</pubDate>
     <lastBuildDate>@Model.Site.Time.ToString("ddd, dd MMM yyyy H:mm:ss K")</lastBuildDate>
