@@ -48,7 +48,7 @@ No where.
 
 ### Contact information
 
-Email: seth@shendrick.net
+Email: @Model.Site.Config["contact"]
 
 ### Additional information
 
