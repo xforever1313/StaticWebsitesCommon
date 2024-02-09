@@ -4,11 +4,14 @@ Our website address is: @Model.Site.Config["url"].
 
 ## What personal data we collect and why we collect it
 
-### Comments
+@if( Model.Site.Config.ContainsKey( "disqus_shortname" ) )
+{
+@:### Comments
 
-Comments are powered by [Disqus](https://disqus.com/).  View their Privacy Policy here: [https://help.disqus.com/terms-and-policies/disqus-privacy-policy](https://help.disqus.com/terms-and-policies/disqus-privacy-policy).  If you do not agree with the policy, do not leave a comment.
+@:Comments are powered by [Disqus](https://disqus.com/).  View their Privacy Policy here: [https://help.disqus.com/terms-and-policies/disqus-privacy-policy](https://help.disqus.com/terms-and-policies/disqus-privacy-policy).  If you do not agree with the policy, do not leave a comment.
 
-You can block Disqus with a JavaScript blocking browser plugin such as [NoScript](https://noscript.net/) or [Privacy Badger](https://privacybadger.org/) and blocking disqus.com (this is not an endorsement of either of those plugins extensions, use at your own discretion).
+@:You can block Disqus with a JavaScript blocking browser plugin such as [NoScript](https://noscript.net/) or [Privacy Badger](https://privacybadger.org/) and blocking disqus.com (this is not an endorsement of either of those plugins extensions, use at your own discretion).
+}
 
 ### Access Logs
 
@@ -22,7 +25,7 @@ x.x.x.x - - [28/Dec/2020:12:46:09 -0800] "GET /robots.txt HTTP/1.1" 404 4394 "-"
 
 ### Cookies
 
-This website does not produce any additional cookies.  Disqus or any embeded content, however, might.
+This website does not produce any additional cookies.  Any embeded content, however, might.
 
 ### Embedded content from other websites
 
@@ -60,7 +63,7 @@ We don't collect data that can be tied to an individual, so there's nothing to p
 
 ### What data breach procedures we have in place
 
-There's no data *to* breach.  This site is a static website, everything is out in the open.  You can even see the source code here: [@Model.Site.Config["github"]](@Model.Site.Config["github"])
+There's no data *to* breach.  This site is a static website, everything is out in the open.  You can even view the source code here: [@Model.Site.Config["github"]](@Model.Site.Config["github"])
 
 ### What third parties we receive data from
 
